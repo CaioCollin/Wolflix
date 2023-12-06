@@ -44,9 +44,11 @@ Se você deseja mergulhar na experiência cinematográfica do Wolflix, experimen
 ## 💻 GIFs Sobre Wolflix:
 
 ![ezgif com-gif-maker](https://github.com/CaioCollin/Wolflix/assets/126752400/69cec7b9-6dfc-4329-966c-eb0a93ed04a4)
-
-
+<br>
 ![ezgif com-gif-maker (1)](https://github.com/CaioCollin/Wolflix/assets/126752400/1de33874-5118-48e4-86f4-4a25757160ea)
+<br>
+![ezgif com-gif-maker (2)](https://github.com/CaioCollin/Wolflix/assets/126752400/7c54170f-c482-4eee-987c-a6ccfdd88b98)
+
 
 
 
