@@ -35,7 +35,7 @@ O Wolflix é um projeto ambicioso desenvolvido por uma equipe apaixonada e dedic
 
 ## 🌟 **Experimente o Wolflix:**
 
-Se você deseja mergulhar na experiência cinematográfica do Wolflix, experimente [Inserir_Link_Aqui]. Estamos ansiosos para receber seus comentários, sugestões e estamos prontos para colaborar em projetos inovadores.
+Se você deseja mergulhar na experiência cinematográfica do Wolflix, experimente para baixar o projeto . Estamos ansiosos para receber seus comentários, sugestões e estamos prontos para colaborar em projetos inovadores.
 
 **Vamos juntos criar experiências cinematográficas incríveis! 🎬🍿**
 
