@@ -40,8 +40,10 @@ Se você deseja mergulhar na experiência cinematográfica do Wolflix, experimen
 **Vamos juntos criar experiências cinematográficas incríveis! 🎬🍿**
 
 
+<br><br><br>
+## 💻 GIFs Sobre Wolflix:
 
-💻 GIFs que Contam uma História:
+![ezgif com-gif-maker](https://github.com/CaioCollin/Wolflix/assets/126752400/69cec7b9-6dfc-4329-966c-eb0a93ed04a4)
 
 
 
