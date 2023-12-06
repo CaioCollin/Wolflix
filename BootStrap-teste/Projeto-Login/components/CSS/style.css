@@ -1,0 +1,441 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu QLD Beginner', cursive;
+     
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; 
+    background:url('../imglogin/img-fundo.webp'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+h1{
+    color: white;
+    margin:10px;
+    font-size: 30px;
+
+    
+}
+h2{
+    color:white;
+}
+
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Para garantir que o vídeo fique por trás do conteúdo da página */
+}
+
+/* Estilos do container principal */
+.container {
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height: 70%;
+    /* max-width: 90%; */
+    /* min-height: 70%; */
+    border: 1px solid black;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+}
+
+/* Estilos para parágrafos dentro do container */
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+/* Estilos para spans dentro do container */
+.container span {
+    font-size: 12px;
+}
+
+/* Estilos para links dentro do container */
+.container a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container a:hover {
+    color: red;
+}
+
+/* Estilos para botões dentro do container */
+.container button {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+/* Estilos para botões ocultos dentro do container */
+.container button.hidden {
+    background-color: transparent;
+    border-color: rgb(160, 177, 191);
+}
+
+/* Estilos específicos para botões com a classe 'btn' dentro do container */
+.container button.btn {
+    color: white;
+}
+
+/* Efeitos de hover para botões com a classe 'btn' dentro do container */
+.container button.btn:hover {
+    background-color: rgb(54, 53, 53);
+    cursor: pointer;
+}
+
+/* Estilos para formulários dentro do container */
+.container form {
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Estilos para campos de entrada dentro do container */
+.container input {
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 40px;
+    width: 100%;
+    background: #4e4a4a;
+    border: 2px solid rgba(189, 181, 181, 0.2);
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+    outline: none;
+}
+
+/* Estilos para placeholders nos campos de entrada dentro do container */
+.container input::placeholder {
+    color: white;
+}
+
+/* Estilos para a caixa de entrada relativa */
+.input-box {
+    position: relative;
+    width: 80%;
+}
+
+/* Estilos para ícones dentro da caixa de entrada */
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: grey;
+}
+
+/* Estilos gerais para contêineres de formulários */
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+/* Estilos para o formulário de login */
+.sign-in {
+    /*modificação*/
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    transition: opacity 0.6s ease-in-out; 
+
+
+}
+
+/* Estilos específicos quando o contêiner está ativo */
+.container.active .sign-in {
+    transform: translateX(100%);
+    /*modificaçãõ*/
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Estilos para o formulário de cadastro */
+.sign-up {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* Estilos específicos quando o contêiner de cadastro está ativo */
+.container.active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+/* Animação para transição entre formulários */
+@keyframes move {
+    0%, 49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+/* Estilos para ícones de mídias sociais */
+.social-icons {
+    margin: 20px 0;
+}
+
+/* Estilos para links de mídias sociais */
+.social-icons a {
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilos para o contêiner de alternância entre formulários */
+.toggle-container {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    z-index: 1000;
+    /* border-radius: 150px 0 0 100px; */
+}
+
+
+/* Estilos específicos quando o contêiner de alternância está ativo */
+.container.active .toggle-container {
+    transform: translateX(-100%);
+    /* border-radius: 0 150px 100px 0; */
+}
+
+/* Estilos para o contêiner de alternância */
+.toggle {
+    background-color: black;
+    height: 100%;
+    color: white;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6ss ease-in-out;
+}
+
+/* Estilos específicos quando o contêiner de alternância está ativo */
+.container.active .toggle {
+    transform: translateX(50%);
+}
+
+/* Estilos para painéis de alternância */
+.toggle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+/* Estilos para o painel de alternância à esquerda   */
+.toggle-left {
+    transform: translateX(-200%);
+}
+
+/* Estilos específicos quando o painel de alternância à esquerda está ativo */
+.container.active .toggle-left {
+    transform: translateX(0);
+}
+
+/* Estilos para o painel de alternância à direita */
+.toggle-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+/* Estilos específicos quando o painel de alternância à direita está ativo */
+.container.active .toggle-right {
+    transform: translateX(200%);
+}
+
+
+/* Atualização de caio com parte do login  */
+
+.toggle-panel.toggle-right {
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px; /* Ajuste o raio do canto conforme necessário */
+}
+
+.toggle-panel.toggle-right video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo da página */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center; /* Ajuste a posição conforme necessário */
+}
+
+@keyframes moveImage {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px); /* Mova a imagem para baixo */
+    }
+}
+
+.toggle-panel.toggle-right .content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7); /* Adiciona um fundo preto semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: moveImage 3s infinite; /* 3 segundos de duração, repetir indefinidamente */
+}
+
+#imglogo {
+    width: 150px;
+    height: 150px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: red;
+}
+
+
+.toggle-panel.toggle-right .content {
+    position: relative;
+    z-index: 1;
+    color: white; /* Adicione uma cor de texto que contraste bem com o vídeo */
+    padding: 20px; /* Ajuste o preenchimento conforme necessário */
+}
+
+
+/* ---- */
+.logo {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.0rem;
+}
+
+.logo span {
+    font-size: 2rem; /* Ou ajuste conforme necessário */
+    color: red;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.content p {
+    font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-bottom: 10%;
+}
+
+#register {
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+#login{
+    background-color: white;
+    color: black;
+}
+
+#login:hover{
+    color:red;
+}
+
+#loginprincipal{
+    transition: background-color 0.3s, color 0.3s;
+}
+#loginprincipal:hover {
+    background-color: darkred; /* Cor para o hover */
+    color: white; /* Cor para o hover */
+}
+  
+#loginprincipal:active {
+    background-color: blue; /* Cor para o clique */
+    color: white; /* Cor para o clique */
+}
+
+
+#esqueceusenha{
+    top: -10px;
+}
